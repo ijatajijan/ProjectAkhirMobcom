@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".UpdateTodoActivity">
+
+    <TextView
+        android:id="@+id/editTodoHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Edit a todo"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/updateSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/editTodoHeading"
+        android:layout_marginEnd="6dp" />
+
+    <EditText
+        android:id="@+id/todoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTodoHeading"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/black_border"
+        android:hint="Enter the product"
+        android:padding="16dp"
+        android:maxLines="1"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/todoDescription"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/todoTitle"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/black_border"
+        android:hint="Enter the description"
+        android:gravity="top"
+        android:padding="16dp"
+        android:textSize="18sp" />
+
+</RelativeLayout>
